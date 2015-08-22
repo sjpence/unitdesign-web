@@ -29,10 +29,15 @@ textarea {
     margin: -10px;
 }
 
-.carousel-inner {
+#myCarousel .carousel-inner {
     text-align: center;
 }
 
-.carousel .item > img {
+#myCarousel .carousel .item > img {
     display: inline-block;
+}
+
+#productCarousel {
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
