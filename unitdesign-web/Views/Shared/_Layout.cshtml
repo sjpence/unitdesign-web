@@ -25,8 +25,18 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            Cleaning <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Standard (ABC-2500)", "Abc2500", "Products")</li>
+                            <li>@Html.ActionLink("Large Format (ABC-3500)", "Abc3500", "Products")</li>
+                        </ul>
+                    </li>                    
                     <li>@Html.ActionLink("Soldering", "Mds", "Products")</li>
+                    <li>@Html.ActionLink("Tinning", "Alt", "Products")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")

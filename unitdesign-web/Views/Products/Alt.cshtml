@@ -1,0 +1,201 @@
+﻿@model unitdesign_web.Models.AltViewModel
+@{
+    ViewBag.Title = "Alt";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            @Html.Partial("ProductSlider", Model.SliderImages)
+        </div>
+        <div class="col-md-6">
+            <h1>ALT Series Tinning Machines</h1>
+            <p class="lead">
+                Using Unit Design's general-purpose fixtures, a variety of completely different components can be tinned -- hundreds in just minutes -- with our ALT tinning machine. The ALT automatically fluxes and
+                solder dips virtually any type of component. The ALT offers precise PLC control of all parameters. Solder temperature, preheat, tinning time and exit speed can be reset in seconds with exacting repeatability.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <!-- Nav Tabs -->
+    <ul class="nav nav-pills" role="tablist">
+        <li role="presentation" class="active"><a href="#features" role="tab" data-toggle="pill">Features</a></li>
+        <li role="presentation"><a href="#specs" role="tab" data-toggle="tab">Specifications</a></li>
+    </ul>
+
+    <!-- Tab Panes -->
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="features">
+            <div class="row">                
+                <h2>Easy to Use</h2>
+                <div class="col-md-6 hidden-xs hidden-sm"> 
+                    <img src="~/Content/img/alt_control.jpg" alt="ALT Operator Station" class="img-responsive" />
+                </div>
+                <div class="col-md-6">
+                    <h3>Automatic Lead Tinning</h3>
+                    <p>The parts to be tinned are automatically conveyed throughout the fluxing and hot solder dipping process by PLC controlled motors, raised and lowered by Unit Design's patented cam system and returned to the operator for unloading.</p>
+                    <h3>Touch Screen Interface</h3>
+                    <p>The touch screen interface allows all process and machine parameters to be changed within seconds. Solder dipping depth, dwell time and extraction speed can be easily set and saved for future use.</p>
+                    <h3>Single Operator</h3>
+                    <p>The batch flow of the ALT Series along with the unified load and unload position allows the entire tinning process to be accomplished with a single operator.</p>
+                    <h3>Quick Warmup</h3>
+                    <p>Since the ALT Series only uses 150 pounds of solder it can be heated up and ready to go in as little as 45 minutes.</p>
+                </div>                               
+            </div>
+            <div class="row">
+                <h2>Flexible</h2>                    
+                <div class="col-md-6">
+                    <h3>Tin a Variety of Components</h3>
+                    <p>Using Unit Design's general purpose fixtures, a variety of different components can be tinned without the need for dedicated or specialty tooling.</p>
+                    <h3>High Production Capability</h3>
+                    <p>
+                        For volume solder dipping of particular components, Unit Design offers a variety of dedicated and semi-dedicated fixtures. For example, more than 1100 axial components can have both leads tinned in just 2 minutes
+                        with Unit Design's specialty fixture.
+                    </p>
+                    <h3>Cast Iron Solder Pot</h3>
+                    <p>The cast iron solder pot and solder temperature control up to 700 &deg;F (370 &deg;C) allow the ALT Series to utilize lead or lead-free solder.</p>
+                </div>
+                <div class="col-md-6 hidden-xs hidden-sm">
+                    <img src="/content/img/solderpot1.jpg" alt="ALT Series Solder Pot" class="img-responsive" />
+                </div>                
+            </div>
+            <div class="row">
+                <hr />
+                <div class="col-md-6">
+                    <h3>Dip Fluxing System</h3>
+                    <p>
+                        The easy to use dip fluxing system allows leads up to 1&frac34;" to be tinned in the ALT Series. The flux liquid height is automatically controlled through the use of an overflow weir to provide a
+                        consistent fluxing depth. When the fluxer is not being used, the flux will drain back to a lower reservoir to reduce evaporation.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Available Radiant Pre-heater</h3>
+                    <p>For even faster tinning, for tinning ceramics or other components requiring a controlled temperature ramp, and for no-clean flux applications, the ALT-200, equipped with a radiant panel pre-heater is available.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Specifications Table -->
+        <div role="tabpanel" class="tab-pane" id="specs">
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>ALT-100</th>
+                            <th>ALT-200</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Tinning Capacity></strong></td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Max. Fixture Size</td>
+                            <td>16in x 16in</td>
+                            <td>16in x 16in</td>
+                        </tr>
+                        <tr>
+                            <td>Lead Length</td>
+                            <td>1.75 in</td>
+                            <td>1.75 in</td>
+                        </tr>
+                        <tr>
+                            <td>Solder Pot</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Capacity (Sn63)</td>
+                            <td>160 lb</td>
+                            <td>160 lb</td>
+                        </tr>
+                        <tr>
+                            <td>Capacity (Sn100)</td>
+                            <td>130 lb</td>
+                            <td>130 lb</td>
+                        </tr>
+                        <tr>
+                            <td>Max. Temperature</td>
+                            <td>700 degF</td>
+                            <td>700 degF</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Flux System</strong></td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Method</td>
+                            <td>Dip Fluxer </td>
+                            <td>Dip Fluxer </td>
+                        </tr>
+                        <tr>
+                            <td>Preheat System</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Method</td>
+                            <td>N/A</td>
+                            <td>IR Radiant</td>
+                        </tr>
+                        <tr>
+                            <td>Max. Temperature</td>
+                            <td>N/A </td>
+                            <td>750 degF</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Utilities</strong></td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Electrical</td>
+                            <td>208VAC 1Ph 25A 60Hz</td>
+                            <td>208VAC 1Ph 45A 60Hz</td>
+                        </tr>
+                        <tr>
+                            <td>Exhaust Venting</td>
+                            <td>1 - 4 in, 450 cfm</td>
+                            <td>2 - 4 in, 450 cfm</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Dimensions</strong></td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Width</td>
+                            <td>63.5 in</td>
+                            <td>87.5 in</td>
+                        </tr>
+                        <tr>
+                            <td>Depth</td>
+                            <td>36 in</td>
+                            <td>36 in</td>
+                        </tr>
+                        <tr>
+                            <td>Height</td>
+                            <td>45 in</td>
+                            <td>45 in</td>
+                        </tr>
+                        <tr>
+                            <td>Weight</td>
+                            <td>700 lb</td>
+                            <td>900 lb</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

@@ -8,7 +8,7 @@ namespace unitdesign_web.Controllers
 {
     public class ProductsController : Controller
     {
-        // GET: Soldering
+        // GET: Mds
         public ActionResult Mds()
         {
             var vm = new Models.MdsViewModel();
@@ -19,6 +19,20 @@ namespace unitdesign_web.Controllers
             vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/mds_controls-scaled.jpg", "MDS Electrical Panel"));
             vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/mds_hood-scaled.jpg", "MDS-200 Fume Hood"));
             vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/mds_operator-scaled.jpg", "MDS-200 Operator Station"));
+
+            return View(vm);
+        }
+
+        // GET: Alt
+        public ActionResult Alt()
+        {
+            var vm = new Models.AltViewModel();
+            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/alt100-scaled.jpg", "ALT-100 Tinning Machine"));
+            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/alt_solderpot-scaled.jpg", "ALT Solderpot"));
+            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/alt_fluxtank-scaled.jpg", "ALT Lower Flux Tank"));
+            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/alt_controls-scaled.jpg", "ALT Electrical Panel"));
+            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/alt_hood-scaled.jpg", "ALT-100 Fume Hood"));
+            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/alt_operator-scaled.jpg", "ALT-100 Operator Station"));
 
             return View(vm);
         }

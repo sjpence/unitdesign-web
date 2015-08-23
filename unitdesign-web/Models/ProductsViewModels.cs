@@ -25,4 +25,13 @@ namespace unitdesign_web.Models
         }
         public IList<ImageMetaData> SliderImages { get; set; }
     }
+
+    public class AltViewModel
+    {
+        public AltViewModel()
+        {
+            SliderImages = new List<ImageMetaData>();
+        }
+        public IList<ImageMetaData> SliderImages { get; set; }
+    }
 }
