@@ -37,7 +37,10 @@ textarea {
     display: inline-block;
 }
 
-#productCarousel {
-    margin-top: 20px;
-    margin-bottom: 30px;
+#productCarousel .carousel-inner {
+    text-align: center;
+}
+
+#productCarousel .carousel .item > img {
+    display: inline-block;
 }

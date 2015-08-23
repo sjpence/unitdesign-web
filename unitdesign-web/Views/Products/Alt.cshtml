@@ -4,18 +4,16 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="container">
+<div class="container">    
+    <div class="row">        
+        @Html.Partial("ProductSlider", Model.SliderImages)
+    </div>
     <div class="row">
-        <div class="col-md-6">
-            @Html.Partial("ProductSlider", Model.SliderImages)
-        </div>
-        <div class="col-md-6">
-            <h1>ALT Series Tinning Machines</h1>
-            <p class="lead">
-                Using Unit Design's general-purpose fixtures, a variety of completely different components can be tinned -- hundreds in just minutes -- with our ALT tinning machine. The ALT automatically fluxes and
-                solder dips virtually any type of component. The ALT offers precise PLC control of all parameters. Solder temperature, preheat, tinning time and exit speed can be reset in seconds with exacting repeatability.
-            </p>
-        </div>
+        <h1>ALT Series Tinning Machines</h1>           
+        <p class="lead">
+            Using Unit Design's general-purpose fixtures, a variety of completely different components can be tinned -- hundreds in just minutes -- with our ALT tinning machine. The ALT automatically fluxes and
+            solder dips virtually any type of component. The ALT offers precise PLC control of all parameters. Solder temperature, preheat, tinning time and exit speed can be reset in seconds with exacting repeatability.
+        </p>
     </div>
 </div>
 

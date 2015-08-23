@@ -4,20 +4,18 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="container">
+<div class="container">    
     <div class="row">
-        <div class="col-md-6">
-            @Html.Partial("ProductSlider", Model.SliderImages)
-        </div>
-        <div class="col-md-6">
-            <h1>MDS Series Soldering Machines</h1>
-            <p class="lead">
-                Unit Design's automatic soldering machines have been an industry favorite for over 25 years. With our MDS soldering machine, printed circuit boards are automatically conveyed through the fluxing and
-                soldering cycles by PLC-controlled stepper motors, raised and lowered by our patented cam system, and returned to the operator for unloading. The MDS Series is capable of both lead and lead-free
-                soldering with rosin, water soluble or no-clean fluxes.
-            </p>
-        </div>
+        @Html.Partial("ProductSlider", Model.SliderImages)
     </div>
+    <div class="row">
+        <h1>MDS Series Soldering Machines</h1>
+        <p class="lead">
+            Unit Design's automatic soldering machines have been an industry favorite for over 25 years. With our MDS soldering machine, printed circuit boards are automatically conveyed through the fluxing and
+            soldering cycles by PLC-controlled stepper motors, raised and lowered by our patented cam system, and returned to the operator for unloading. The MDS Series is capable of both lead and lead-free
+            soldering with rosin, water soluble or no-clean fluxes.
+        </p>
+    </div>    
 </div>
 
 <div class="container">
