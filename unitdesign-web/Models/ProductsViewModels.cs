@@ -34,4 +34,13 @@ namespace unitdesign_web.Models
         }
         public IList<ImageMetaData> SliderImages { get; set; }
     }
+
+    public class AbcViewModel
+    {
+        public AbcViewModel()
+        {
+            SliderImages = new List<ImageMetaData>();
+        }
+        public IList<ImageMetaData> SliderImages { get; set; }
+    }
 }

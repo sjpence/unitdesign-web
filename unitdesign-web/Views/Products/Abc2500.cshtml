@@ -1,0 +1,287 @@
+﻿@model unitdesign_web.Models.AbcViewModel
+@{
+    ViewBag.Title = "ABC-2500";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">    
+    <div class="row">        
+        @Html.Partial("ProductSlider", Model.SliderImages)
+    </div>
+    <div class="row">
+        <h1>ABC-2500 Aqueous Batch Cleaners</h1>           
+        <p class="lead">
+            Unit Design's broad range of Aqueous Batch Cleaners enable the customer to clean printed circuit boards removing rosin, water soluble and no-clean fluxes. The ABC series is also capable of removing dirt,
+            cutting oils, and contaminants from a variety of manufactured components. The results of this cleaning process meet all military and commercial specifications. The ABC series of cleaners can be customized
+            to meet all of your cleaning needs. Units may be fully or partially closed-loop. Options include wash water recycling, rinse water recycling or both. De-ionized water systems are also available. For your
+            water only applications, we offer a completely closed loop unit.
+        </p>
+    </div>
+</div>
+
+<div class="container">
+    <!-- Nav Tabs -->
+    <ul class="nav nav-pills" role="tablist">
+        <li role="presentation" class="active"><a href="#features" role="tab" data-toggle="pill">Features</a></li>
+        <li role="presentation"><a href="#specs" role="tab" data-toggle="tab">Specifications</a></li>
+    </ul>
+
+    <!-- Tab Panes -->
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="features">
+            <div class="row">                
+                <h2>Cleaning Chamber</h2>
+                <div class="col-md-6 hidden-xs hidden-sm"> 
+                    <img src="~/Content/img/chamber.jpg" alt="ABC-2500 Cleaning Chamber" class="img-responsive" />
+                </div>
+                <div class="col-md-6">
+                    <h3>Industrial</h3>
+                    <p>The ABC-2500 is designed from the ground up for an industrial cleaning process, unlike many other batch cleaners which are built using a dishwasher or lab glasswasher as a base.</p>
+                    <h3>Durable</h3>
+                    <p>
+                        The cleaning chamber of the ABC Series is constructed from thick 16 gage 304 stainless steel, as opposed to the thin stainless steel of a residential dishwasher or lab glasswasher.  This along with a door
+                        designed for industrial use will ensure many years of service from the system.
+                    </p>
+                    <h3>Powerful</h3>
+                    <p>A high flow, medium pressure spray system provides both the high flow rates desired for many of the most popular cleaning chemicals and enough pressure to remove contaminants without damaging sensitive boards.</p>
+                </div>                               
+            </div>
+            <div class="row">
+                <h2>Flexible Chemical Management</h2>                    
+                <div class="col-md-6">
+                    <h3>Open Loop</h3>
+                    <p>
+                        All ABC Series Batch Cleaner models come standard with a feeder pump capable of metering cleaning chemical directly into the cleaning chamber.  This allows for easy startup of a cleaning process, quick
+                        chemical testing and also injection of rinse aids.  Chemical injected this way is sent to drain creating an open loop cleaning process.
+                    </p>
+                    <h3>Closed Loop</h3>
+                    <p>
+                        The available Wash Water Recycling System allows the use of a closed loop washing process.  The cleaning chemical solution is stored in a heated tank for reuse over and over.  This provides substantial chemical
+                        cost savings.  Once the recommended use period is over, the tank is drained and the machine automatically refills the tank with the programmed mixture of chemical and water.
+                    </p>
+                    <h3>Compatible</h3>
+                    <p>The stainless steel plumbing of the ABC Series provides for compatibility with all of the common aqueous cleaning chemicals used in the electronics industry.</p>
+                </div>
+                <div class="col-md-6 hidden-xs hidden-sm">
+                    <img src="/content/img/wwr_tank.jpg" alt="Wash Water Recycling Tank" class="img-responsive" />
+                </div>                
+            </div>
+            <div class="row">
+                <h2>Control</h2>
+                <div class="col-md-3">
+                    <h3>Resistivity</h3>
+                    <p>With its built-in resistivity monitoring system, the ABC 2500 can be programmed by an operator to achieve a desired resistivity (cleanliness) set point, assuring the degree of product cleanliness.</p>
+                </div>
+                <div class="col-md-3">
+                    <h3>Touchscreen</h3>
+                    <p>The touchscreen operator interface lets you set new parameters in seconds. Using the touchscreen the operator can setup, store and recall all of the process parameters from a central location.</p>
+                </div>
+                <div class="col-md-3">
+                    <h3>Network</h3>
+                    <p>Available ethernet connectivity allows process cycle records to be retrived over a company network. </p>
+                </div>
+                <div class="col-md-3">
+                    <h3>Documentation</h3>
+                    <p>
+                        The available data logging printer records the set and actual parameters from the process at each step during the cleaning cycle. This provides documentation for cleaning process quality assurance or for use
+                        in a statistical process control system.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <hr />
+                <div class="col-md-4">
+                    <h2>Water Heating</h2>
+                    <p>
+                        The ABC series is equipped with a built-in water heating system. Water enters the machine and is pre-heated with the 18,000 watt on-demand heater and is then transferred into the cleaning chamber sump. In the sump,
+                        a separate 6,000 watt heater holds the wash or rinse water at the precise user programmed temperature. This system enables the use of heated rinse cycles, which are recommended by most cleaning chemistry
+                        manufacturers. Also, by heating the water as it is needed, the user can program different temperatures for each step of the cleaning process.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Water Recycling</h2>
+                    <p>
+                        The Rinse Water Recycling (RWR) system reduces or even eliminates the need to send your rinse water to drain. This reduces the load on an evaporator or waste treatment system, reducing operating and energy
+                        costs. This is an excellent choice when you are using water soluble fluxes as the system is completely closed loop. The RWR can clean the rinse water (in the case of R, RA, RMA or No-Clean fluxes) or both
+                        the wash and rinse water in the case of OA fluxes.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Drying</h2>
+                    <p>
+                        The ABC Series provides a fast, efficient forced air flow with temperatures up to 250 &deg;F (120 &deg;C), providing uniform drying throughout the cleaning chamber. Engineered with a cross ventilation design, the
+                        ABC-2500 has the most effective drying system in the aqueous batch cleaning market today.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Specifications Table -->
+        <div role="tabpanel" class="tab-pane" id="specs">
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead> 
+                        <tr>
+                            <th></th>
+                            <th>ABC-2500</th>
+                            <th>ABC-3500</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Chamber Volume</strong></td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Width</td>
+                            <td>22 in</td>
+                            <td>26 in</td>
+                        </tr>
+                        <tr>
+                            <td>Depth</td>
+                            <td>22 in</td>
+                            <td>26 in</td>
+                        </tr>
+                        <tr>
+                            <td>Height</td>
+                            <td>22 in</td>
+                            <td>26 in</td>
+                        </tr>
+                        <tr>
+                            <td>Max. Board Size</td>
+                            <td>21 in x 23 in</td>
+                            <td>25 in x 27 in</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Spray System</strong></td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Pump Power</td>
+                            <td>1 hp</td>
+                            <td>1.5 hp</td>
+                        </tr>
+                        <tr>
+                            <td>Spray Liquid Flow</td>
+                            <td>37 gpm</td>
+                            <td>48 gpm</td>
+                        </tr>
+                        <tr>
+                            <td>Spray Liquid Pressure</td>
+                            <td>26 psig</td>
+                            <td>30 psig</td>
+                        </tr>
+                        <tr>
+                            <td>Impact Pressure</td>
+                            <td>20.5 oz/sqin</td>
+                            <td>27.5 oz/sqin</td>
+                        </tr>
+                        <tr>
+                            <td>Upper Spray Nozzles</td>
+                            <td>16 at 35 deg</td>
+                            <td>16 at 35 deg</td>
+                        </tr>
+                        <tr>
+                            <td>Lower Spray Nozzles</td>
+                            <td>16 at 35 deg</td>
+                            <td>16 at 35 deg</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Systems</strong></td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Inlet Water</td>
+                            <td>18 kW</td>
+                            <td>18 kW</td>
+                        </tr>
+                        <tr>
+                            <td>Cleaning Chamber Sump</td>
+                            <td>6 kW</td>
+                            <td>6 kW</td>
+                        </tr>
+                        <tr>
+                            <td>Forced Air Convection</td>
+                            <td>12 kW</td>
+                            <td>18 kW</td>
+                        </tr>
+                        <tr>
+                            <td>Chemical Tank (WWR Option)</td>
+                            <td>4.5 kW</td>
+                            <td>4.5 kW</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Utilities</strong></td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">Electrical Options</td>
+                            <td>208VAC 3Ph 50A 60Hz</td>
+                            <td>208VAC 3Ph 50A 60Hz</td>
+                        </tr>
+                        <tr>
+                            <td>480VAC 3Ph 30A 60Hz</td>
+                            <td>480VAC 3Ph 30A 60Hz</td>
+                        </tr>
+                        <tr>
+                            <td>380VAC 3Ph 40A 50Hz</td>
+                            <td>380VAC 3Ph 40A 50Hz</td>
+                        </tr>
+                        <tr>
+                            <td>Incoming Water</td>
+                            <td>1/2 NPT</td>
+                            <td>1/2 NPT</td>
+                        </tr>
+                        <tr>
+                            <td>Drain</td>
+                            <td>1/2 NPT</td>
+                            <td>1/2 NPT</td>
+                        </tr>
+                        <tr>
+                            <td>Exhaust Venting</td>
+                            <td>6 in, 0 cfm</td>
+                            <td>6 in, 0 cfm</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Dimensions</strong></td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Width, Standard</td>
+                            <td>50.5 in</td>
+                            <td>55.5 in</td>
+                        </tr>
+                        <tr>
+                            <td>Width, with RWR Option</td>
+                            <td>64.75 in</td>
+                            <td>69.75 in</td>
+                        </tr>
+                        <tr>
+                            <td class="itemTitle">Depth</td>
+                            <td>36 in</td>
+                            <td>40 in</td>
+                        </tr>
+                        <tr>
+                            <td>Height</td>
+                            <td>65.5 in</td>
+                            <td>65.5 in</td>
+                        </tr>
+                        <tr>
+                            <td>Weight</td>
+                            <td>1000 lb</td>
+                            <td>1100 lb</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

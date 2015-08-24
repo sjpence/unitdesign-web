@@ -197,7 +197,15 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\img\abc2500-scaled.jpg" />
     <Content Include="Content\img\abc2500_slide.jpg" />
+    <Content Include="Content\img\abc_chamber-scaled.jpg" />
+    <Content Include="Content\img\abc_chemical-scaled.jpg" />
+    <Content Include="Content\img\abc_dryer-scaled.jpg" />
+    <Content Include="Content\img\abc_inlet_heat-scaled.jpg" />
+    <Content Include="Content\img\abc_plumbing-scaled.jpg" />
+    <Content Include="Content\img\abc_valve-scaled.jpg" />
+    <Content Include="Content\img\abc_wwr-scaled.jpg" />
     <Content Include="Content\img\alt100-scaled.jpg" />
     <Content Include="Content\img\alt100_slide.jpg" />
     <Content Include="Content\img\alt_control.jpg" />
@@ -207,6 +215,7 @@
     <Content Include="Content\img\alt_operator-scaled.jpg" />
     <Content Include="Content\img\alt_solderpot-scaled.jpg" />
     <Content Include="Content\img\carriage.jpg" />
+    <Content Include="Content\img\chamber.jpg" />
     <Content Include="Content\img\mds200-scaled.jpg" />
     <Content Include="Content\img\mds200_slide.jpg" />
     <Content Include="Content\img\mds_carriage-scaled.jpg" />
@@ -218,6 +227,7 @@
     <Content Include="Content\img\solderpot.jpg" />
     <Content Include="Content\img\solderpot1.jpg" />
     <Content Include="Content\img\UDMinLogo.png" />
+    <Content Include="Content\img\wwr_tank.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -277,6 +287,7 @@
     <Content Include="Views\Products\Mds.cshtml" />
     <Content Include="Views\Products\ProductSlider.cshtml" />
     <Content Include="Views\Products\Alt.cshtml" />
+    <Content Include="Views\Products\Abc2500.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
