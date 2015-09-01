@@ -8,11 +8,12 @@
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
     </ol>
     <div class="carousel-inner" role="listbox">
         <div class="item active">
             <div class="container">
-                <img src="~/Content/img/abc2500_slide.jpg" />
+                <img src="~/Content/img/home-2500.jpg" />
                 <div class="carousel-caption">
                     <h1>ABC-2500</h1>
                     <p>An Industrial Strength Batch Cleaner for the Electronics Industry</p>
@@ -22,7 +23,17 @@
         </div>
         <div class="item">
             <div class="container">
-                <img src="~/Content/img/alt100_slide.jpg" />
+                <img src="~/Content/img/home-3500.jpg" />
+                <div class="carousel-caption">
+                    <h1>ABC-3500</h1>
+                    <p>Large Format Batch Cleaner for the Electronics Industry</p>
+                    <p><a class="btn btn-lg btn-primary" href="@Url.Action("Abc3500", "Products")" role="button">Learn More</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="container">
+                <img src="~/Content/img/home-alt.jpg" />
                 <div class="carousel-caption">
                     <h1>ALT-100</h1>
                     <p>Precision Tinning for Lead or Lead-free Applications.</p>
@@ -32,7 +43,7 @@
         </div>
         <div class="item">
             <div class="container">
-                <img src="~/Content/img/mds200_slide.jpg" />
+                <img src="~/Content/img/home-mds.jpg" />
                 <div class="carousel-caption">
                     <h1>MDS-200</h1>
                     <p>An Easy to Use Solution for Lead or Lead-free Soldering</p>
@@ -52,23 +63,14 @@
 </div>
 
 <div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
+    <p class="lead">
+        At Unit Design, we engineer, build, sell and support the world's finest aqueous batch cleaning, drag soldering, and tinning systems.
+    </p>
+    <p class="lead">
+        Unit Design has always strived to be at the forefront of technical innovation and has consistently produced a top rated product line of
+        @Html.ActionLink("Automatic Soldering Machines", "Mds", "Products"),
+        @Html.ActionLink("Tinning Machines", "Alt", "Products") and both
+        @Html.ActionLink("Standard", "Abc2500", "Products") and
+        @Html.ActionLink("Large Format", "Abc3500", "Products") Aqueous Batch Cleaners.
+    </p>
 </div>

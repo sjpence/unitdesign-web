@@ -197,6 +197,20 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\img\2500\2500-Chamber.jpg" />
+    <Content Include="Content\img\2500\2500-Drain.jpg" />
+    <Content Include="Content\img\2500\2500-Dryer.jpg" />
+    <Content Include="Content\img\2500\2500-InletHeater.jpg" />
+    <Content Include="Content\img\2500\2500-Overall.jpg" />
+    <Content Include="Content\img\2500\2500-Spray.jpg" />
+    <Content Include="Content\img\2500\2500-WWR.jpg" />
+    <Content Include="Content\img\3500\3500web-1.JPG" />
+    <Content Include="Content\img\3500\3500web-2.JPG" />
+    <Content Include="Content\img\3500\3500web-3.JPG" />
+    <Content Include="Content\img\3500\3500web-4.JPG" />
+    <Content Include="Content\img\3500\3500web-5.JPG" />
+    <Content Include="Content\img\3500\3500web-6.JPG" />
+    <Content Include="Content\img\3500\3500web-7.JPG" />
     <Content Include="Content\img\abc2500-scaled.jpg" />
     <Content Include="Content\img\abc2500_slide.jpg" />
     <Content Include="Content\img\abc_chamber-scaled.jpg" />
@@ -208,6 +222,12 @@
     <Content Include="Content\img\abc_wwr-scaled.jpg" />
     <Content Include="Content\img\alt100-scaled.jpg" />
     <Content Include="Content\img\alt100_slide.jpg" />
+    <Content Include="Content\img\alt\alt-controls.jpg" />
+    <Content Include="Content\img\alt\alt-fluxtank.jpg" />
+    <Content Include="Content\img\alt\alt-hood.jpg" />
+    <Content Include="Content\img\alt\alt-operator.jpg" />
+    <Content Include="Content\img\alt\alt-overall.jpg" />
+    <Content Include="Content\img\alt\alt-solderpot.jpg" />
     <Content Include="Content\img\alt_control.jpg" />
     <Content Include="Content\img\alt_controls-scaled.jpg" />
     <Content Include="Content\img\alt_fluxtank-scaled.jpg" />
@@ -216,8 +236,27 @@
     <Content Include="Content\img\alt_solderpot-scaled.jpg" />
     <Content Include="Content\img\carriage.jpg" />
     <Content Include="Content\img\chamber.jpg" />
+    <Content Include="Content\img\feature-2500-chamber.jpg" />
+    <Content Include="Content\img\feature-2500-wwr.jpg" />
+    <Content Include="Content\img\feature-3500-chamber.jpg" />
+    <Content Include="Content\img\feature-3500-wwr.jpg" />
+    <Content Include="Content\img\feature-alt-operator.jpg" />
+    <Content Include="Content\img\feature-alt-solder.jpg" />
+    <Content Include="Content\img\feature-mds-carriage.jpg" />
+    <Content Include="Content\img\feature-mds-solder.jpg" />
+    <Content Include="Content\img\home-2500.jpg" />
+    <Content Include="Content\img\home-3500.jpg" />
+    <Content Include="Content\img\home-alt.jpg" />
+    <Content Include="Content\img\home-mds.jpg" />
     <Content Include="Content\img\mds200-scaled.jpg" />
     <Content Include="Content\img\mds200_slide.jpg" />
+    <Content Include="Content\img\mds\mds-carriage.jpg" />
+    <Content Include="Content\img\mds\mds-carrier1.jpg" />
+    <Content Include="Content\img\mds\mds-carrier3.jpg" />
+    <Content Include="Content\img\mds\mds-controls.jpg" />
+    <Content Include="Content\img\mds\mds-hood.jpg" />
+    <Content Include="Content\img\mds\mds-operator.jpg" />
+    <Content Include="Content\img\mds\mds-overall.jpg" />
     <Content Include="Content\img\mds_carriage-scaled.jpg" />
     <Content Include="Content\img\mds_carrier-scaled.jpg" />
     <Content Include="Content\img\mds_carrier3-scaled.jpg" />
@@ -288,6 +327,7 @@
     <Content Include="Views\Products\ProductSlider.cshtml" />
     <Content Include="Views\Products\Alt.cshtml" />
     <Content Include="Views\Products\Abc2500.cshtml" />
+    <Content Include="Views\Products\Abc3500.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -37,10 +37,12 @@ textarea {
     display: inline-block;
 }
 
+/*
+    Not sure if I need this anymore since I added center-block to image directly
 #productCarousel .carousel-inner {
     text-align: center;
 }
 
 #productCarousel .carousel .item > img {
     display: inline-block;
-}
+}*/

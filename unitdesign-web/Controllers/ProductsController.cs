@@ -12,13 +12,13 @@ namespace unitdesign_web.Controllers
         public ActionResult Mds()
         {
             var vm = new Models.MdsViewModel();
-            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/mds200-scaled.jpg", "MDS-200 Soldering Machine"));
-            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/mds_carriage-scaled.jpg", "MDS Transport Carriage"));
-            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/mds_carrier-scaled.jpg", "MDS Carrier with Single Row of Boards"));
-            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/mds_carrier3-scaled.jpg", "MDS Carrier with Multiple Rows of Boards"));
-            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/mds_controls-scaled.jpg", "MDS Electrical Panel"));
-            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/mds_hood-scaled.jpg", "MDS-200 Fume Hood"));
-            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/mds_operator-scaled.jpg", "MDS-200 Operator Station"));
+            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/mds/mds-overall.jpg", "MDS-200 Soldering Machine"));
+            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/mds/mds-carriage.jpg", "MDS Transport Carriage"));
+            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/mds/mds-carrier1.jpg", "MDS Carrier with Single Row of Boards"));
+            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/mds/mds-carrier3.jpg", "MDS Carrier with Multiple Rows of Boards"));
+            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/mds/mds-controls.jpg", "MDS Electrical Panel"));
+            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/mds/mds-hood.jpg", "MDS-200 Fume Hood"));
+            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/mds/mds-operator.jpg", "MDS-200 Operator Station"));
 
             return View(vm);
         }
@@ -27,12 +27,12 @@ namespace unitdesign_web.Controllers
         public ActionResult Alt()
         {
             var vm = new Models.AltViewModel();
-            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/alt100-scaled.jpg", "ALT-100 Tinning Machine"));
-            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/alt_solderpot-scaled.jpg", "ALT Solderpot"));
-            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/alt_fluxtank-scaled.jpg", "ALT Lower Flux Tank"));
-            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/alt_controls-scaled.jpg", "ALT Electrical Panel"));
-            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/alt_hood-scaled.jpg", "ALT-100 Fume Hood"));
-            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/alt_operator-scaled.jpg", "ALT-100 Operator Station"));
+            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/alt/alt-overall.jpg", "ALT-100 Tinning Machine"));
+            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/alt/alt-solderpot.jpg", "ALT Solderpot"));
+            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/alt/alt-fluxtank.jpg", "ALT Lower Flux Tank"));
+            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/alt/alt-controls.jpg", "ALT Electrical Panel"));
+            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/alt/alt-hood.jpg", "ALT-100 Fume Hood"));
+            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/alt/alt-operator.jpg", "ALT-100 Operator Station"));
 
             return View(vm);
         }
@@ -41,14 +41,27 @@ namespace unitdesign_web.Controllers
         public ActionResult Abc2500()
         {
             var vm = new Models.AbcViewModel();
-            vm.SliderImages.Add(new Models.ImageMetaData("~/content/img/abc2500-scaled.jpg", "ABC-2500 Aqueous Batch Cleaner"));
-            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/abc_chamber-scaled.jpg", "ABC-2500 Cleaning Chamber"));
-            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/abc_chemical-scaled.jpg", "Chemical Injection Pumps"));
-            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/abc_dryer-scaled.jpg", "High Performance Drying System"));
-            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/abc_inlet_heat-scaled.jpg", "On-Demand Rinse Water heating"));
-            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/abc_plumbing-scaled.jpg", "Stainless Steel Plumbing"));
-            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/abc_valve-scaled.jpg", "Full Port Stainless Steel Ball Valves"));
-            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/abc_wwr-scaled.jpg", "Heated and Mixed Cleaning Solution Storage"));
+            vm.SliderImages.Add(new Models.ImageMetaData("~/content/img/2500/2500-Overall.jpg", "ABC-2500 Aqueous Batch Cleaner"));
+            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/2500/2500-Chamber.jpg", "ABC-2500 Cleaning Chamber"));
+            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/2500/2500-Spray.jpg", "Spray Pump Plumbing"));
+            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/2500/2500-Dryer.jpg", "High Performance Drying System"));
+            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/2500/2500-InletHeater.jpg", "On-Demand Rinse Water heating"));
+            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/2500/2500-Drain.jpg", "Stainless Steel Drain Plumbing"));
+            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/2500/2500-WWR.jpg", "Heated and Mixed Cleaning Solution Storage"));
+
+            return View(vm);
+        }
+
+        // GET: Abc3500
+        public ActionResult Abc3500()
+        {
+            var vm = new Models.AbcViewModel();
+            vm.SliderImages.Add(new Models.ImageMetaData("~/content/img/3500/3500web-7.JPG", "ABC-3500 Aqueous Batch Cleaner"));
+            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/3500/3500web-1.JPG", "Spray Pump and Plumbing"));
+            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/3500/3500web-3.JPG", "Wash Water Recycling Tank"));
+            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/3500/3500web-5.JPG", "Electrical Panel"));
+            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/3500/3500web-2.JPG", "Drain Piping"));
+            vm.SliderImages.Add(new Models.ImageMetaData("~/Content/img/3500/3500web-4.JPG", "Dryer and Inlet Heater"));
 
             return View(vm);
         }
