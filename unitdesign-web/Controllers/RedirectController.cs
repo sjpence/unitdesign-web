@@ -22,5 +22,15 @@ namespace unitdesign_web.Controllers
         {
             return RedirectPermanent("/Products/Alt");
         }
+
+        public ActionResult About()
+        {
+            return RedirectPermanent("/Home/About");
+        }
+
+        public ActionResult Contact()
+        {
+            return RedirectPermanent("/Home/Contact");
+        }
     }
 }

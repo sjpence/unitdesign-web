@@ -29,6 +29,16 @@ namespace unitdesign_web
                 url: "tinning/{path}",
                 defaults: new { controller = "Redirect", action = "Tinning", path = "" }
             );
+            routes.MapRoute(
+                name: "LegacyAbout",
+                url: "about-us",
+                defaults: new { controller = "Redirect", action = "About" }
+            );
+            routes.MapRoute(
+                name: "LegacyContact",
+                url: "contact",
+                defaults: new { controller = "Redirect", action = "Contact" }
+            );
 
             // Main Rout for new site
             routes.MapRoute(
