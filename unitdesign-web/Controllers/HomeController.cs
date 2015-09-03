@@ -20,7 +20,10 @@ namespace unitdesign_web.Controllers
 
         public ActionResult Contact()
         {
-            return View();
+            var vm = new Models.ContactViewModel();
+            vm.TimeSent = DateTime.UtcNow;
+
+            return View(vm);
         }
     }
 }
