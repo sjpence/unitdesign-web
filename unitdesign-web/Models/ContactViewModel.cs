@@ -14,6 +14,7 @@ namespace unitdesign_web.Models
         public string Title { get; set; }
 
         [Required(ErrorMessage = "Valid email address is required")]
+        [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
 
         public string Phone { get; set; }
@@ -26,6 +27,7 @@ namespace unitdesign_web.Models
         public string Country { get; set; }
 
         [Required(ErrorMessage = "Comments are required")]
+        [DataType(DataType.MultilineText)]
         public string Comments { get; set; }
 
         public DateTime TimeSent { get; set; }

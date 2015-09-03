@@ -16,12 +16,12 @@
     white-space: normal;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
+/* Set width on the form input elements since they're 100% wide by default - WHY?? */
+/*input,
 select,
 textarea {
     max-width: 280px;
-}
+}*/
 
 .navbar-brand img {
     width: 240px;
@@ -48,6 +48,7 @@ textarea {
 }*/
 
 /* styles for validation helpers */
+/* From: http://weblogs.asp.net/jdanforth/form-validation-formatting-in-asp-net-mvc-5-and-bootstrap-3 */
 .field-validation-error {
     color: #b94a48;
 }
