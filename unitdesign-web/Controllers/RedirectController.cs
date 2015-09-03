@@ -12,5 +12,11 @@ namespace unitdesign_web.Controllers
         {
             return RedirectPermanent("/Products/Abc2500");
         }
+
+        public ActionResult Soldering(string path)
+        {
+            return RedirectPermanent("/Products/Mds");
+        }
+        
     }
 }

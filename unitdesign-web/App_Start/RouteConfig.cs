@@ -13,12 +13,20 @@ namespace unitdesign_web
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
             
+            // Legacy Routes for old unitdesign.com site
             routes.MapRoute(
                 name: "LegacyCleaning",
                 url: "cleaning/{path}",
                 defaults: new { controller = "Redirect", action = "Cleaning", path="" }
             );
+            routes.MapRoute(
+                name: "LegacySoldering",
+                url: "soldering/{path}",
+                defaults: new { controller = "Redirect", action = "Soldering", path = "" }
+            );
 
+
+            // Main Rout for new site
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
