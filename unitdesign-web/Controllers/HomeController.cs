@@ -25,5 +25,17 @@ namespace unitdesign_web.Controllers
 
             return View(vm);
         }
+
+        [HttpPost]
+        public ActionResult Contact(Models.ContactViewModel contact)
+        {
+            if (ModelState.IsValid)
+            {
+
+                return RedirectToAction("Index");
+            }
+
+            return View(contact);
+        }
     }
 }

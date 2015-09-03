@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -7,9 +8,14 @@ namespace unitdesign_web.Models
 {
     public class ContactViewModel
     {
+        [Required(ErrorMessage = "Name is required")]
         public string Name { get; set; }
+
         public string Title { get; set; }
+
+        [Required(ErrorMessage = "Valid email address is required")]
         public string Email { get; set; }
+
         public string Phone { get; set; }
         public string Company { get; set; }
         public string Address1 { get; set; }
@@ -18,7 +24,10 @@ namespace unitdesign_web.Models
         public string State { get; set; }
         public string Zip { get; set; }
         public string Country { get; set; }
+
+        [Required(ErrorMessage = "Comments are required")]
         public string Comments { get; set; }
+
         public DateTime TimeSent { get; set; }
     }
 }
