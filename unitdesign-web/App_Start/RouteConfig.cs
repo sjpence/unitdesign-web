@@ -24,7 +24,11 @@ namespace unitdesign_web
                 url: "soldering/{path}",
                 defaults: new { controller = "Redirect", action = "Soldering", path = "" }
             );
-
+            routes.MapRoute(
+                name: "LegacyTinning",
+                url: "tinning/{path}",
+                defaults: new { controller = "Redirect", action = "Tinning", path = "" }
+            );
 
             // Main Rout for new site
             routes.MapRoute(

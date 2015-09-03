@@ -17,6 +17,10 @@ namespace unitdesign_web.Controllers
         {
             return RedirectPermanent("/Products/Mds");
         }
-        
+
+        public ActionResult Tinning(string path)
+        {
+            return RedirectPermanent("/Products/Alt");
+        }
     }
 }
