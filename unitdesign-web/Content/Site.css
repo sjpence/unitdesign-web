@@ -16,12 +16,12 @@
     white-space: normal;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
+/* Set width on the form input elements since they're 100% wide by default - WHY?? */
+/*input,
 select,
 textarea {
     max-width: 280px;
-}
+}*/
 
 .navbar-brand img {
     width: 240px;
@@ -37,6 +37,11 @@ textarea {
     display: inline-block;
 }
 
+/*Contact form check field*/
+.check-field {
+    display: none;
+}
+
 /*
     Not sure if I need this anymore since I added center-block to image directly
 #productCarousel .carousel-inner {
@@ -46,3 +51,34 @@ textarea {
 #productCarousel .carousel .item > img {
     display: inline-block;
 }*/
+
+/* styles for validation helpers */
+/* From: http://weblogs.asp.net/jdanforth/form-validation-formatting-in-asp-net-mvc-5-and-bootstrap-3 */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+
+select.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
