@@ -56,10 +56,15 @@ namespace unitdesign_web.Controllers
                 email.SpamFieldFull = spamFieldFull;
 
                 await email.SendAsync();
-                return RedirectToAction("Index");                                
+                return RedirectToAction("ContactSuccess");                                
             }
 
             return View(contact);
+        }
+
+        public ActionResult ContactSuccess()
+        {
+            return View();
         }
     }
 }
