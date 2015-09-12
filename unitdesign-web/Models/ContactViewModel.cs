@@ -33,5 +33,8 @@ namespace unitdesign_web.Models
         public string Comments { get; set; }
 
         public DateTime TimeSent { get; set; }
+
+        [Display(Name = "Leave this field blank")]
+        public string Check { get; set; }
     }
 }

@@ -37,6 +37,11 @@ textarea {
     display: inline-block;
 }
 
+/*Contact form check field*/
+.check-field {
+    display: none;
+}
+
 /*
     Not sure if I need this anymore since I added center-block to image directly
 #productCarousel .carousel-inner {

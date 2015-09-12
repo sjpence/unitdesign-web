@@ -12,7 +12,7 @@ Subject: "Unit Design Website Contact - @ViewBag.CurrentTime
             <tr><td>Email:</td><td>@ViewBag.From</td></tr>
             <tr><td>Phone:</td><td>@ViewBag.Phone</td></tr>
             <tr><td>Company:</td><td>@ViewBag.Company</td></tr>
-            <tr><td>Address:</td><td>@Html.Raw(ViewBag.Address.Replace(Environment.NewLine, "<br />"))</td></tr>
+            <tr><td>Address:</td><td>@(string.IsNullOrEmpty(ViewBag.Address) ? "" : Html.Raw(ViewBag.Address.Replace(Environment.NewLine, "<br />")))</td></tr>
             <tr><td>City:</td><td>@ViewBag.City</td></tr>
             <tr><td>State:</td><td>@ViewBag.State</td></tr>
             <tr><td>ZIP:</td><td>@ViewBag.Zip</td></tr>
@@ -22,5 +22,6 @@ Subject: "Unit Design Website Contact - @ViewBag.CurrentTime
         <p>@Html.Raw(ViewBag.Comments.Replace(Environment.NewLine, "<br />"))</p>
         <br />
         <p>Elapsed: @string.Format("{0:g}", ViewBag.Elapsed)</p>
+        <p>Hidden Field: @(ViewBag.SpamFieldFull ? "FULL" : "EMPTY")</p>
     </body>
 </html>
