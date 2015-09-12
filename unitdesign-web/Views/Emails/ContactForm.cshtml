@@ -21,7 +21,11 @@ Subject: "Unit Design Website Contact - @ViewBag.CurrentTime
         <p>Comments:</p>
         <p>@Html.Raw(ViewBag.Comments.Replace(Environment.NewLine, "<br />"))</p>
         <br />
-        <p>Elapsed: @string.Format("{0:g}", ViewBag.Elapsed)</p>
-        <p>Hidden Field: @(ViewBag.SpamFieldFull ? "FULL" : "EMPTY")</p>
+        <br />
+        <br />
+        <p>
+            Elapsed: @string.Format("{0:g}", ViewBag.Elapsed)<br />
+            Check Field: @(ViewBag.SpamFieldFull ? "FULL" : "EMPTY")
+        </p>
     </body>
 </html>
