@@ -352,6 +352,13 @@
     <Content Include="Views\Emails\Web.config" />
     <Content Include="Views\Emails\ContactForm.cshtml" />
     <Content Include="Views\Home\ContactSuccess.cshtml" />
+    <Content Include="r_smtp.config" />
+    <Content Include="r_smtp.Debug.config">
+      <DependentUpon>r_smtp.config</DependentUpon>
+    </Content>
+    <Content Include="r_smtp.Release.config">
+      <DependentUpon>r_smtp.config</DependentUpon>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
