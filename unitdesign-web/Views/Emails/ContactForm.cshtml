@@ -1,0 +1,26 @@
+﻿To: contactform@unitdesign.com
+From: @ViewBag.From
+Subject: "Unit Design Website Contact - @ViewBag.CurrentTime
+
+<html>
+    <head></head>
+    <body>
+        <h3>Unit Design Website Contact</h3>
+        <table>
+            <tr><td>Name:</td><td>@ViewBag.Name</td></tr>
+            <tr><td>Title:</td><td>@ViewBag.Title</td></tr>
+            <tr><td>Email:</td><td>@ViewBag.From</td></tr>
+            <tr><td>Phone:</td><td>@ViewBag.Phone</td></tr>
+            <tr><td>Company:</td><td>@ViewBag.Company</td></tr>
+            <tr><td>Address:</td><td>@Html.Raw(ViewBag.Address.Replace(Environment.NewLine, "<br />"))</td></tr>
+            <tr><td>City:</td><td>@ViewBag.City</td></tr>
+            <tr><td>State:</td><td>@ViewBag.State</td></tr>
+            <tr><td>ZIP:</td><td>@ViewBag.Zip</td></tr>
+            <tr><td>Country:</td><td>@ViewBag.Country</td></tr>
+        </table>
+        <p>Comments:</p>
+        <p>@Html.Raw(ViewBag.Comments.Replace(Environment.NewLine, "<br />"))</p>
+        <br />
+        <p>Elapsed: @string.Format("{0:g}", ViewBag.Elapsed)</p>
+    </body>
+</html>
