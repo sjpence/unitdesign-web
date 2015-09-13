@@ -286,6 +286,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <None Include="Properties\PublishProfiles\unitdesign.com - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\unitdesign.com - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="robots.txt" />
     <Content Include="Scripts\bootstrap.js" />
@@ -352,6 +354,13 @@
     <Content Include="Views\Emails\Web.config" />
     <Content Include="Views\Emails\ContactForm.cshtml" />
     <Content Include="Views\Home\ContactSuccess.cshtml" />
+    <Content Include="d_smtp.config" />
+    <Content Include="d_smtp.Debug.config">
+      <DependentUpon>d_smtp.config</DependentUpon>
+    </Content>
+    <Content Include="d_smtp.Release.config">
+      <DependentUpon>d_smtp.config</DependentUpon>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
