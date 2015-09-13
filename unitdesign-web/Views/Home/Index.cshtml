@@ -1,0 +1,80 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@section Meta
+{
+    <meta name="description" content="Unit Design builds machines for aqueous batch cleaning, soldering and tinning.">
+}
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <div class="container">
+                <img src="~/Content/img/home-2500.jpg" />
+                <div class="carousel-caption">
+                    <h1>ABC-2500</h1>
+                    <p>An Industrial Strength Batch Cleaner for the Electronics Industry</p>
+                    <p><a class="btn btn-lg btn-primary" href="@Url.Action("Abc2500", "Products")" role="button">Learn More</a></p>
+                </div>
+            </div>            
+        </div>
+        <div class="item">
+            <div class="container">
+                <img src="~/Content/img/home-3500.jpg" />
+                <div class="carousel-caption">
+                    <h1>ABC-3500</h1>
+                    <p>Large Format Batch Cleaner for the Electronics Industry</p>
+                    <p><a class="btn btn-lg btn-primary" href="@Url.Action("Abc3500", "Products")" role="button">Learn More</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="container">
+                <img src="~/Content/img/home-alt.jpg" />
+                <div class="carousel-caption">
+                    <h1>ALT-100</h1>
+                    <p>Precision Tinning for Lead or Lead-free Applications.</p>
+                    <p><a class="btn btn-lg btn-primary" href="@Url.Action("Alt", "Products")" role="button">Learn more</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="container">
+                <img src="~/Content/img/home-mds.jpg" />
+                <div class="carousel-caption">
+                    <h1>MDS-200</h1>
+                    <p>An Easy to Use Solution for Lead or Lead-free Soldering</p>
+                    <p><a class="btn btn-lg btn-primary" href="@Url.Action("Mds", "Products")" role="button">Learn More</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<div class="row">
+    <p class="lead">
+        At Unit Design, we engineer, build, sell and support the world's finest aqueous batch cleaning, drag soldering, and tinning systems.
+    </p>
+    <p class="lead">
+        Unit Design has always strived to be at the forefront of technical innovation and has consistently produced a top rated product line of
+        @Html.ActionLink("Automatic Soldering Machines", "Mds", "Products"),
+        @Html.ActionLink("Tinning Machines", "Alt", "Products") and both
+        @Html.ActionLink("Standard", "Abc2500", "Products") and
+        @Html.ActionLink("Large Format", "Abc3500", "Products") Aqueous Batch Cleaners.
+    </p>
+</div>

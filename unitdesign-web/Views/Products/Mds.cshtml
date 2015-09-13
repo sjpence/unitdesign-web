@@ -1,0 +1,246 @@
+﻿@model unitdesign_web.Models.MdsViewModel
+@{
+    ViewBag.Title = "MDS";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section Meta
+{
+    <meta name="keywords" content="soldering, lead-free, long-lead, drag solder, circuit boards, high temperature solder, no-clean flux, multi-layer boards, water soluable flux">
+    <meta name="description" content="MDS Series Soldering Machines are easy to operate, maintain and are capable of using either lead or lead-free solder with rosin, water soluble or no-clean fluxes.">
+}
+
+<div class="container">    
+    <div class="row">
+        @Html.Partial("ProductSlider", Model.SliderImages)
+    </div>
+    <div class="row">
+        <h1>MDS Series Soldering Machines</h1>
+        <p class="lead">
+            Unit Design's automatic soldering machines have been an industry favorite for over 25 years. With our MDS soldering machine, printed circuit boards are automatically conveyed through the fluxing and
+            soldering cycles by PLC-controlled stepper motors, raised and lowered by our patented cam system, and returned to the operator for unloading. The MDS Series is capable of both lead and lead-free
+            soldering with rosin, water soluble or no-clean fluxes.
+        </p>
+    </div>    
+</div>
+
+<div class="container">
+    <!-- Nav Tabs -->
+    <ul class="nav nav-pills" role="tablist">
+        <li role="presentation" class="active"><a href="#features" role="tab" data-toggle="pill">Features</a></li>
+        <li role="presentation"><a href="#specs" role="tab" data-toggle="tab">Specifications</a></li>
+    </ul>
+
+    <!-- Tab Panes -->
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="features">
+            <div class="row">                
+                <h2>Easy to Use</h2>
+                <div class="col-md-6 hidden-xs hidden-sm"> 
+                    <img src="~/Content/img/feature-mds-carriage.jpg" alt="MDS Series Carriage" class="img-responsive" />
+                </div>
+                <div class="col-md-6">
+                    <h3>Automatic Soldering</h3>
+                    <p>Boards are automatically conveyed throughout the fluxing, preheat and soldering process by PLC controlled motors, raised and lowered by Unit Design's patented cam system and returned to the operator for unloading.</p>
+                    <h3>Touch Screen Interface</h3>
+                    <p>The touch screen interface allows all process and machine parameters to be changed within seconds. No special technician is required.</p>
+                    <h3>Single Operator</h3>
+                    <p>The batch flow of the MDS Series along with the unified load and unload position allows the entire soldering process to be accomplished with a single operator.</p>
+                    <h3>Quick Warmup</h3>
+                    <p>Since the MDS Series only uses 150 pounds of solder it can be heated up and ready to go in as little as 45 minutes.</p>
+                </div>                               
+            </div>
+            <div class="row">
+                <h2>Flexible</h2>                    
+                <div class="col-md-6">
+                    <h3>Batch Process</h3>
+                    <p>The nature of a batch process flow allows the preheat and soldering times to be adjusted independently. A long preheat time can be paired with a short soldering time for heat sensitive components.</p>
+                    <h3>Adjustable Carriers</h3>
+                    <p>
+                        The adjustable carriers of the MDS Series allow many sizes of boards to be soldered.  Multiple rows of small boards or up to a single 16" x 16" board can be soldered in a single pass, just add or
+                        remove available finger bars.
+                    </p>
+                    <h3>High Production Capability</h3>
+                    <p>With extra carriers for offline loading and unloading, as many as 4000 3" x 4" boards can be soldered in a single 8 hour shift.</p>
+                    <h3>Cast Iron Solder Pot</h3>
+                    <p>The cast iron solder pot and solder temperature control up to 700 &deg;F (370 &deg;C) allow the MDS Series to utilize lead or lead-free solder.</p>
+                    <h3>Thick Boards</h3>
+                    <p>The batch process along with an adjustable solder depth makes achieving complete hole fill possible even on boards up to 0.25" (6.5mm) thick.</p>
+                </div>
+                <div class="col-md-6 hidden-xs hidden-sm">
+                    <img src="~/content/img/feature-mds-solder.jpg" alt="MDS Series Solder Pot" class="img-responsive" />
+                </div>                
+            </div>
+            <div class="row">
+                <h2>Fluxing Options</h2>
+                <div class="col-md-4">
+                    <h3>Foam (MDS-200)</h3>
+                    <p>
+                        The foam fluxing system of the MDS-200 is the same popular system which has been in production since the first MDS-100 machines were produced in 1985.  It is easy to setup, operate and maintain.  The foam system
+                        applies an even and light coat of flux to the bottom of the board.  It is suitable for leads which protrude up to 3/8" below the bottom surface of the board.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Dip (MDS-210)</h3>
+                    <p>
+                        The dip fluxing system of the MDS-210 was introduced to allow boards with longer lead protrusion, up to 1&frac34;", to be processed.  This facilitates a process in which no lead pre-trimming and
+                        crimping is required, just stuff the boards, solder and then trim after soldering.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Spray (MDS-220)</h3>
+                    <p>
+                        The spray fuxing system of the MDS-220 is the newest of the fluxing options.  The air atomizing spray valves of this system applies the lightest possible coat of flux while still allowing leads
+                        with up to 1&frac34;" protrusion to be soldered.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Specifications Table -->
+        <div role="tabpanel" class="tab-pane" id="specs">
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th class="modelTitle">MDS-200</th>
+                            <th class="modelTitle">MDS-210</th>
+                            <th class="modelTitle">MDS-220</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Soldering Capacity</strong></td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Max. Board Size</td>
+                            <td>16 in x 16 in</td>
+                            <td>16 in x 16 in</td>
+                            <td>16 in x 16 in</td>
+                        </tr>
+                        <tr>
+                            <td>Lead Length</td>
+                            <td>0.375 in</td>
+                            <td>1.5 in</td>
+                            <td>1.5 in</td>
+                        </tr>
+                        <tr>
+                            <td>Solder Pot</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Capacity (Sn63)</td>
+                            <td>160 lb</td>
+                            <td>160 lb</td>
+                            <td>160 lb</td>
+                        </tr>
+                        <tr>
+                            <td>Capacity (Sn100)</td>
+                            <td>130 lb</td>
+                            <td>130 lb</td>
+                            <td>130 lb</td>
+                        </tr>
+                        <tr>
+                            <td>Max. Temperature</td>
+                            <td>700 degF</td>
+                            <td>700 degF</td>
+                            <td>700 degF</td>
+                        </tr>
+                        <tr>
+                            <td>Flux System</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Method</td>
+                            <td>Foam Fluxer</td>
+                            <td>Dip Fluxer</td>
+                            <td>Spray Fluxer</td>
+                        </tr>
+                        <tr>
+                            <td>Preheat System</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Method</td>
+                            <td>IR Radiant</td>
+                            <td>IR Radiant</td>
+                            <td>IR Radiant</td>
+                        </tr>
+                        <tr>
+                            <td>Max. Temperature</td>
+                            <td>750 degF</td>
+                            <td>750 degF</td>
+                            <td>750 degF</td>
+                        </tr>
+                        <tr>
+                            <td>Utilities</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Electrical</td>
+                            <td>208VAC 1Ph 45A 60Hz</td>
+                            <td>208VAC 1Ph 45A 60Hz</td>
+                            <td>208VAC 1Ph 45A 60Hz</td>
+                        </tr>
+                        <tr>
+                            <td>Compressed Air</td>
+                            <td>1/2 NPT, 90 psig, 22 cfm</td>
+                            <td>1/2 NPT, 90 psig, 20 cfm</td>
+                            <td>1/2 NPT, 90 psig, 5 cfm</td>
+                        </tr>
+                        <tr>
+                            <td>Exhaust Venting</td>
+                            <td>2 - 4 in, 450 cfm</td>
+                            <td>2 - 4 in, 450 cfm</td>
+                            <td>2 - 4 in, 450 cfm</td>
+                        </tr>
+                        <tr>
+                            <td>Dimensions</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Width</td>
+                            <td>87.5 in</td>
+                            <td>87.5 in</td>
+                            <td>87.5 in</td>
+                        </tr>
+                        <tr>
+                            <td>Depth</td>
+                            <td>36 in</td>
+                            <td>36 in</td>
+                            <td>36 in</td>
+                        </tr>
+                        <tr>
+                            <td>Height</td>
+                            <td>45 in</td>
+                            <td>45 in</td>
+                            <td>45 in</td>
+                        </tr>
+                        <tr>
+                            <td>Weight</td>
+                            <td>900 lb</td>
+                            <td>900 lb</td>
+                            <td>900 lb</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

@@ -1,0 +1,84 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default - WHY?? */
+/*input,
+select,
+textarea {
+    max-width: 280px;
+}*/
+
+.navbar-brand img {
+    width: 240px;
+    height: 40px;
+    margin: -10px;
+}
+
+#myCarousel .carousel-inner {
+    text-align: center;
+}
+
+#myCarousel .carousel .item > img {
+    display: inline-block;
+}
+
+/*Contact form check field*/
+.check-field {
+    display: none;
+}
+
+/*
+    Not sure if I need this anymore since I added center-block to image directly
+#productCarousel .carousel-inner {
+    text-align: center;
+}
+
+#productCarousel .carousel .item > img {
+    display: inline-block;
+}*/
+
+/* styles for validation helpers */
+/* From: http://weblogs.asp.net/jdanforth/form-validation-formatting-in-asp-net-mvc-5-and-bootstrap-3 */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+
+select.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
