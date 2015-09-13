@@ -354,12 +354,12 @@
     <Content Include="Views\Emails\Web.config" />
     <Content Include="Views\Emails\ContactForm.cshtml" />
     <Content Include="Views\Home\ContactSuccess.cshtml" />
-    <Content Include="d_smtp.config" />
-    <Content Include="d_smtp.Debug.config">
-      <DependentUpon>d_smtp.config</DependentUpon>
+    <Content Include="dev_smtp.config" />
+    <Content Include="dev_smtp.Debug.config">
+      <DependentUpon>dev_smtp.config</DependentUpon>
     </Content>
-    <Content Include="d_smtp.Release.config">
-      <DependentUpon>d_smtp.config</DependentUpon>
+    <Content Include="dev_smtp.Release.config">
+      <DependentUpon>dev_smtp.config</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>

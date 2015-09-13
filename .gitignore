@@ -195,4 +195,10 @@ FakesAssemblies/
 # Visual Studio 6 workspace options file
 *.opt
 
-*smtp*config
+unitdesign-web/smtp.Debug.config
+unitdesign-web/smtp.Release.config
+unitdesign-web/smtp.config
+
+unitdesign-web/dev_smtp.Debug.config
+unitdesign-web/dev_smtp.Release.config
+unitdesign-web/dev_smtp.config
